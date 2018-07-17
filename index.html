@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+
+<style>
+  .navbar{
+    margin-bottom: 0;
+    border-radius: 0%;
+    background-color:#5E4485;
+    color: red;
+    font-size: 1.2em;
+    padding: 0em;
+  
+  }
+  .navbar-inverse {
+    background-color: green;
+    border-color: white;
+}
+  .navbar-brand{
+    float: left;
+    min-height: 55px;
+    padding: 10px 15px 5px ;
+  }
+  .navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > a:hover,
+.navbar-inverse .navbar-nav > a:focus {
+    color:white;
+    background: green;
+}
+ .navbar-inverse .navbar-nav li a{
+   color:black
+ } 
+ .carousel-caption{
+   top:50%;
+   transform:translateY(-50%);
+   text-transform: capitalize;
+ }
+ .btn{
+   font-size: 18px;
+   padding: 12px 22px;
+   border: 2px solid;
+   background-color: #5E4485;
+   color:white;
+ }
+ footer{
+   width: 100%;
+   background-color: green;
+   color: white;
+   padding: 3%;
+ }
+ .fab{
+   padding: 20px;
+   font-size: 30px;
+   color: white;
+ }
+ .fab:hover{
+   color: white;
+   text-decoration: none;
+ }
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" style="background-color:green" >
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>  
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">MYSITE</a>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="https://en.wikipedia.org/wiki/Web_development">ABOUT</a></li>
+      <li><a href="http://www.yoginetindia.com/web-development.html">SERVICES</a></li>
+      <li><a href="https://www.topuniversities.com/courses/computer-science-information-systems/5-trends-computer-science-research">TECHNOLOGY</a></li>
+      <li><a href="https://www.elegantthemes.com/blog/tips-tricks/learn-web-development-online">HELP</a></li>
+
+    </ul>
+  </div>
+  </div>
+</nav> 
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/coding2.jpg">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+        <button class="btn">Get Started</button>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/coding6.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/coding5.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Coding IS Fun</h3>
+        <p>Thank you, Chicago!</p>
+        
+      </div>
+    </div>
+    </div>
+    <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container text-center">
+  <h2>What we are using</h2>
+  <div class="row">
+    <div class="col-sm-4"><img src="images/html5.png" id="icon">
+    <h4>HTML 5</h4>
+  </div>
+    <div class="col-sm-4"><img src="images/python.png" id="icon">
+      <h4>PYTHON</h4>
+    </div>
+    <div class="col-sm-4"><img src="images/bootstrap.png" id="icon">
+      <h4>BOOTSTRAP</h4>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h4>SOME THINGS ABOUT BOOTSTRAP</h4>
+      <p>Bootstrap is full of incredible features but can seem too complex for many of us.
+         You simply cannot remember all the functions or cannot take one week off to
+          study its documentation. Many times even experienced users get surprised
+           when they discover some of its hidden gems.</p>
+
+      <p>I have carefully chosen some of the best tips and tricks that I have used in
+         my Bootstrap coding career so far and I would like to share them with you.
+
+          For a better reading experience, I divided them into 4 groups.
+          
+          </p>   
+          <ul>
+            <li>Bootstrap grid</li>
+            <li>Components - navbar, footer</li>
+            <li>Buttons and forms</li>
+            <li>Typography and layout tips</li>
+          </ul>  
+    </div>
+    <div class="col-md-6"><img src="images/bootstrap1.png" class="img-responsive"></div>
+  </div>
+</div> 
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-lg-3 col-xs-12">
+      <h3>Some Cool Things You Can Do With Python</h3>
+      <p>Python has taken over the developing space. In fact, it’s everywhere. Ask any
+         coder and they’ll tell you that it’s easy to learn and it's often the right tool
+          for the job.
+
+          The programming language is also quite popular among data scientists and startups.
+           That can give you an idea of how prevalent it will be in the near future. Python is 
+           a Top 5 coding language because it’s extremely logical and light.</p>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xs-12">
+      <img src="images/pyicon.png">
+    </div>
+  <div class="col-md-3 col-lg-3 col-xs-12">
+    <h3>SOME COOL THINGS ABOUT HTML5</h3>
+    <p>
+        HTML5 adds this cool thing called canvas which allows you to use JS(scripting) to
+         draw/modify shapes and images in a container which opens up the possibility of making 
+         very cool games, animations without the help of any plugin. 
+    </p>
+    <p>HTML5 also enables offline apps by adding application cache. This enables you to access your
+       favourite web-apps even when you are not connected to the internet. Obviously the web developer
+        has to add functionality to make his app work offline but it is a really neat feature</p>
+
+  </div>
+  <div class="col-md-3 col-lg-3 col-xs-12">
+      <img src="images/hticon.jpeg">
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <h4><a href="#hidden" data-toggle="collapse">Want To Know About More Languages?</a></h4>
+    <div id="hidden" class="collapse">
+      <h2>JAVA</h2>
+      <p>Java code does not get directly converted into machine code. Instead it runs on a "virtual machine"
+         which can run on all sorts of different hardware. This lets Java fulfill their slogan of "Write once,
+          run anywhere". Java was once intended for widespread use on web browsers, but that is less common and a
+           very different language is used for that (JavaScript). It is used in regular desktop applications, but
+            its most popular consumer use is for creating Android apps. In large companies it is used both internally
+             and to power their websites. It is also commonly taught in colleges</p>
+
+      <h2>C#</h2>
+      <p>C# can be called "Microsoft's Java", but it also has features missing in Java. It does not yet support multiple platforms as well
+         as Java does, but it does fit well with Microsoft's other offerings. If someone is within a Microsoft world anyways, it likely
+          makes sense to use C# over Java.
+          Microsoft has started to open-source C# and associated technologies, so support for other platforms will improve over time.</p>       
+    
+     </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Contact Us</h2>
+      <p>our address and contact info here</p>
+    </div>
+    <div class="col-sm-4">
+      <h2>Connect With Us</h2>
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="www.linkedin.com/in/tarun-bapat-8ab06a125" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-whatsapp"></a>
+
+    </div>
+    <div class="col-sm-4">
+      <img src="images/programming.png">
+
+      </div>
+  </div>
+</footer>
+
+
+ </body>
+</html>
